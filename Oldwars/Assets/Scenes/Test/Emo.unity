@@ -404,6 +404,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree_01
       objectReference: {fileID: 0}
+    - target: {fileID: 2222111361404534124, guid: 88f2fd29f58b9734683512546acec310, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
     - target: {fileID: 2222111361405018444, guid: 88f2fd29f58b9734683512546acec310, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -629,6 +633,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e289bf5debb17f6459818c207d781953, type: 3}
+--- !u!1 &1006790921 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2222111361404534124, guid: 88f2fd29f58b9734683512546acec310, type: 3}
+  m_PrefabInstance: {fileID: 458323781}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1006790925
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006790921}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.7310517, y: 5.561799, z: 2.4410653}
+  m_Center: {x: -0.06559682, y: 2.780911, z: 0.098100185}
 --- !u!1001 &1035378714
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -838,6 +860,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a49e84e67b866ed488cff57454e55f5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controltime: 0
+  animcontrol: {fileID: 0}
 --- !u!65 &1479670543
 BoxCollider:
   m_ObjectHideFlags: 0
