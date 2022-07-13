@@ -483,6 +483,10 @@ PrefabInstance:
       propertyPath: _joystick
       value: 
       objectReference: {fileID: 1985458043}
+    - target: {fileID: 3073972681325686167, guid: df8cd10578f21e34dbe8fc3b82d482ac, type: 3}
+      propertyPath: stoneData
+      value: 
+      objectReference: {fileID: 11400000, guid: 4b9ebf063c7a24343a78bc963561be1c, type: 2}
     - target: {fileID: 3073972681325686184, guid: df8cd10578f21e34dbe8fc3b82d482ac, type: 3}
       propertyPath: m_RootOrder
       value: 3

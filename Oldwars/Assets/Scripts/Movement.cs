@@ -8,7 +8,6 @@ public class Movement : MonoBehaviour
     private Transform _player;
     private Animator animator;
     [SerializeField] private float speed;
-
     private void Start()
     {
         _player = transform;
@@ -27,5 +26,6 @@ public class Movement : MonoBehaviour
         {
             animator.SetBool("Run", false);
         }
+        scriptable.
     }
 }
