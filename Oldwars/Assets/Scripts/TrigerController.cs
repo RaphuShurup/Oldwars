@@ -22,14 +22,19 @@ public class TrigerController : MonoBehaviour
         {
             ResourcesManager.Instance.SetStoneData(5);
             CloseVelocity();
-            StartCoroutine("StayTimer");
         }
-
-        if (collision.gameObject.CompareTag("Tree"))
+        else if (collision.gameObject.CompareTag("Tree"))
         {
             ResourcesManager.Instance.SetWoodData(5);
             CloseVelocity();
-
+        }
+        else if (collision.gameObject.CompareTag("WoodBuild"))
+        {
+           //UI dan paneli aç. Onaylarsa bizden kaynaðý eksilt ve binayý yap.
+        }
+        else if (collision.gameObject.CompareTag("StoneBuild"))
+        {
+            //UI dan paneli aç. Onaylarsa bizden kaynaðý eksilt ve binayý yap
         }
     }
 
