@@ -4,23 +4,31 @@ using UnityEngine;
 
 public class TrigerController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private Rigidbody rb;
+
+    private void Start()
     {
-        
+        rb = GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void CloseVelocity()
     {
-        
+        rb.velocity = Vector3.zero;
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionStay(Collision collision)
     {
         if (collision.gameObject.CompareTag("Stone"))
         {
-            Debug.Log("Stone");
+            ResourcesManager.Instance.SetStoneData(5);
+            CloseVelocity();
+        }
+
+        if (collision.gameObject.CompareTag("Tree"))
+        {
+            ResourcesManager.Instance.SetWoodData(5);
+            CloseVelocity();
+
         }
     }
 

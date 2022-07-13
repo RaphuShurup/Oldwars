@@ -7,6 +7,7 @@ public class Movement : MonoBehaviour
     [SerializeField] private Joystick _joystick;
     private Transform _player;
     private Animator animator;
+    private Rigidbody rb;
     [SerializeField] private float speed;
     private void Start()
     {
