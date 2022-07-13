@@ -26,6 +26,6 @@ public class Movement : MonoBehaviour
         {
             animator.SetBool("Run", false);
         }
-        scriptable.
+        
     }
 }
