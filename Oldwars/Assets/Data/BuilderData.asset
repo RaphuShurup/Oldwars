@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7472022578430446a81b4796175c151, type: 3}
   m_Name: BuilderData
   m_EditorClassIdentifier: 
-  woodCreateTimer: 0
-  stoneCreatTimer: 0
-  woodCreateValue: 0
-  stoneCreateValue: 0
+  woodCreateTimer: 5
+  woodCreateValue: 20
+  stoneCreatTimer: 10
+  stoneCreateValue: 10

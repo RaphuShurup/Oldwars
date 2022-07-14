@@ -14,21 +14,21 @@ public class BuilderManager : MonoBehaviour
         }
     }
 
-    private void CheckWoodData(int price)
-    {
-        if(ResourcesManager.Instance.GetWoodData() >= price)
-        {
-            ResourcesManager.Instance.SetWoodData(-price);
-        }
-    }
+    //private void CheckWoodData(int price)
+    //{
+    //    if(ResourcesManager.Instance.GetWoodData() >= price)
+    //    {
+    //        ResourcesManager.Instance.SetWoodData(-price);
+    //    }
+    //}
 
-    private void CheckSToneData(int price)
-    {
-        if (ResourcesManager.Instance.GetStoneData() >= price)
-        {
-            ResourcesManager.Instance.SetStoneData(-price);
-        }
-    }
+    //private void CheckSToneData(int price)
+    //{
+    //    if (ResourcesManager.Instance.GetStoneData() >= price)
+    //    {
+    //        ResourcesManager.Instance.SetStoneData(-price);
+    //    }
+    //}
 
     [SerializeField] BuildDataManager scriptable;
     public void UpgradeWoodValueData(int value,int price)

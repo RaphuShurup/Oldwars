@@ -7,8 +7,6 @@ public class ResourcesManager : MonoBehaviour
 {
     public static ResourcesManager Instance;
 
-    public Text woodcounttext;
-    public Text stonecounttext;
 
     private void Awake()
     {
@@ -21,13 +19,13 @@ public class ResourcesManager : MonoBehaviour
     public void SetWoodData(int value)
     {
         scriptable.wood += value;
-        woodcounttext.text = (scriptable.wood).ToString();
+        UIManager.Instance.UpdateWoodText();
     }
 
     public void SetStoneData(int value)
     {
         scriptable.stone += value;
-        stonecounttext.text = (scriptable.stone).ToString();
+        UIManager.Instance.UpdateStoneText();
     }
 
     public int GetWoodData()
